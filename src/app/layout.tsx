@@ -18,7 +18,11 @@ export const metadata: Metadata = {
   title: "Unitools — Free Online Tools",
   description: "Fast, secure, and privacy-first utility tools. No uploads, works offline.",
   icons: { icon: "/favicon.ico" },
-};
+
+  verification: {
+    google: "kesMqKcAxUgVO_tzQA-cZH2ogNiciiMcjDpivPYSfno",
+  },
+  };
 
 export default function RootLayout({
   children,
