@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://unitools-five.vercel.app";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — Unitools",
   description: "Unitools is privacy-first: tools run locally and data stays on-device.",
   keywords: ["privacy policy", "data privacy", "on-device processing"],
-  alternates: { canonical: "https://unitools.local/privacy-policy" },
+  alternates: { canonical: `${baseUrl}/privacy-policy` },
   openGraph: {
     title: "Privacy Policy — Unitools",
     description: "Learn how Unitools keeps your data on-device and private.",
-    url: "https://unitools.local/privacy-policy",
+    url: `${baseUrl}/privacy-policy`,
     siteName: "Unitools",
     type: "website",
   },

@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ImageToPdfClient from "../../../components/ImageToPdfClient";
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://unitools-five.vercel.app";
+
 export const metadata: Metadata = {
   title: "Image to PDF Converter — Unitools",
   description:
     "Convert multiple images (JPG, PNG, WEBP) to a single PDF in your browser. Reorder, set page size, orientation, margins, and quality.",
   keywords: ["image to pdf", "convert images to pdf", "jpg to pdf", "png to pdf"],
   alternates: {
-    canonical: "https://unitools.local/tools/image-to-pdf",
+    canonical: `${baseUrl}/tools/image-to-pdf`,
   },
   openGraph: {
     title: "Image to PDF Converter — Unitools",
     description:
       "Convert images to PDF locally. Drag reorder, choose page size, orientation, margins, quality.",
-    url: "https://unitools.local/tools/image-to-pdf",
+    url: `${baseUrl}/tools/image-to-pdf`,
     siteName: "Unitools",
     type: "website",
   },

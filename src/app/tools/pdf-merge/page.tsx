@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PDFMergeClient from "../../../components/PDFMergeClient";
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://unitools-five.vercel.app";
+
 export const metadata: Metadata = {
   title: "PDF Merger — Unitools",
   description:
     "Merge multiple PDFs in your browser. Reorder, remove, and download. No uploads.",
   keywords: ["pdf merge", "merge pdfs", "combine pdf", "pdf tools"],
   alternates: {
-    canonical: "https://unitools.local/tools/pdf-merge",
+    canonical: `${baseUrl}/tools/pdf-merge`,
   },
   openGraph: {
     title: "PDF Merger — Unitools",
     description:
       "Merge PDFs locally. Reorder files, remove, and download. No uploads.",
-    url: "https://unitools.local/tools/pdf-merge",
+    url: `${baseUrl}/tools/pdf-merge`,
     siteName: "Unitools",
     type: "website",
   },

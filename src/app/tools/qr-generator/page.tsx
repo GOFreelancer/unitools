@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import QRGeneratorClient from "../../../components/QRGeneratorClient";
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://unitools-five.vercel.app";
+
 export const metadata: Metadata = {
   title: "QR Code Generator — Unitools",
   description:
     "Generate QR codes for URLs, WhatsApp links, and WiFi. Preview live and download PNG. All in-browser.",
   keywords: ["QR code", "WhatsApp link", "WiFi QR", "URL QR"],
   alternates: {
-    canonical: "https://unitools.local/tools/qr-generator",
+    canonical: `${baseUrl}/tools/qr-generator`,
   },
   openGraph: {
     title: "QR Code Generator — Unitools",
     description:
       "Create QR codes for text/URLs, WhatsApp links, and WiFi. Works fully in-browser.",
-    url: "https://unitools.local/tools/qr-generator",
+    url: `${baseUrl}/tools/qr-generator`,
     siteName: "Unitools",
     type: "website",
   },

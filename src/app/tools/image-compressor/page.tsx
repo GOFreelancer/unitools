@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ImageCompressorClient from "../../../components/ImageCompressorClient";
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://unitools-five.vercel.app";
+
 export const metadata: Metadata = {
   title: "Image Compressor — Unitools",
   description:
     "Compress images (JPG, PNG, WEBP) fully in your browser. Adjust quality, format, and size. Download individually or as ZIP.",
   keywords: ["image compressor", "compress JPG", "compress PNG", "compress WEBP"],
   alternates: {
-    canonical: "https://unitools.local/tools/image-compressor",
+    canonical: `${baseUrl}/tools/image-compressor`,
   },
   openGraph: {
     title: "Image Compressor — Unitools",
     description:
       "Compress and convert images locally. Adjust quality, format, and size.",
-    url: "https://unitools.local/tools/image-compressor",
+    url: `${baseUrl}/tools/image-compressor`,
     siteName: "Unitools",
     type: "website",
   },

@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import WordCounterClient from "../../../components/WordCounterClient";
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://unitools-five.vercel.app";
+
 export const metadata: Metadata = {
   title: "Word Counter — Unitools",
   description:
     "Count words, characters, sentences, paragraphs, and reading time. Works locally in your browser.",
   keywords: ["word counter", "character count", "reading time", "text tools"],
   alternates: {
-    canonical: "https://unitools.local/tools/word-counter",
+    canonical: `${baseUrl}/tools/word-counter`,
   },
   openGraph: {
     title: "Word Counter — Unitools",
     description:
       "Live word and character counts with reading time, all in-browser.",
-    url: "https://unitools.local/tools/word-counter",
+    url: `${baseUrl}/tools/word-counter`,
     siteName: "Unitools",
     type: "website",
   },

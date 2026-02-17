@@ -1,19 +1,21 @@
 import type { Metadata } from "next";
 import ToolsClient from "../../components/ToolsClient";
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://unitools-five.vercel.app";
+
 export const metadata: Metadata = {
   title: "Tools — Unitools",
   description:
     "Explore Unitools: PDF, Image, Text, Developer, and Student utilities. Fast and private.",
   keywords: ["tools", "PDF tools", "image tools", "text tools", "developer"],
   alternates: {
-    canonical: "https://unitools.local/tools",
+    canonical: `${baseUrl}/tools`,
   },
   openGraph: {
     title: "Tools — Unitools",
     description:
       "Browse categories: PDF, Image, Text, Developer, Student. Fast and private.",
-    url: "https://unitools.local/tools",
+    url: `${baseUrl}/tools`,
     siteName: "Unitools",
     type: "website",
   },
