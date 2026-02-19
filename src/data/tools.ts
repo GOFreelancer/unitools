@@ -20,10 +20,10 @@ export const tools: Tool[] = [
     category: "Image",
   },
   {
-    slug: "resume-builder",
-    name: "Resume Builder",
-    description: "Generate a clean, ATS-friendly resume.",
-    category: "Student",
+    slug: "pdf-editor",
+    name: "PDF Editor",
+    description: "Edit PDFs easily: draw, erase, add images, and write text.",
+    category: "PDF",
   },
   {
     slug: "word-counter",

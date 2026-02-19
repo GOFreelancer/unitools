@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/image-compressor",
     "/tools/word-counter",
     "/tools/qr-generator",
+    "/tools/pdf-editor",
   ];
   const now = new Date();
   return paths.map((p) => ({
